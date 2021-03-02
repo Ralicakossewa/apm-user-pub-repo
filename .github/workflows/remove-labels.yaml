@@ -7,7 +7,7 @@ on:
       - converted
 jobs:
   remove_labels:
-    if: github.event.project_card.column_id == '12345678'
+    if: github.event.project_card.column_id == '13185107'
     runs-on: ubuntu-latest
     steps:
       - name: remove labels
