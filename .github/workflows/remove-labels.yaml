@@ -1,10 +1,10 @@
 name: Remove labels
 on:
   project_card:
-    types:
-      - moved
-      - created
-      - converted
+#     types:
+#       - moved
+#       - created
+#       - converted
 jobs:
   remove_labels:
     if: github.event.project_card.column_id == '13186353'
