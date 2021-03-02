@@ -11,4 +11,4 @@ jobs:
         with:
           project: apm-org-board
           column: c2
-          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
