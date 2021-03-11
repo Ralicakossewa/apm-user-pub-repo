@@ -1,15 +1,14 @@
-name: Label moved card
+name: Move assigned card
 on:
   issues:
     types:
       - assigned
 jobs:
-  automate-project-columns:
+  move-assigned-card:
     runs-on: ubuntu-latest
     steps:
       - uses: alex-page/github-project-automation-plus@v0.3.0
         with:
-          project: apm-user-pub-repo-board
-          column: c2
-#           repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          project: dup-name
+          column: c1
+          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
